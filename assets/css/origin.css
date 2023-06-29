@@ -1,8 +1,8 @@
-.scroll-warp section {
+.wrapper #start {
   height: 100vh;
   width: 100vw;
 }
-.scroll-warp section .bg {
+.wrapper #start .bg {
   background-color: #000000;
   background-image: url(../images/universe.jpg);
   background-size: cover;
@@ -11,9 +11,128 @@
   height: 100%;
   z-index: 1;
 }
-.scroll-warp section .top-content {
+.wrapper #start .top-content {
   width: 100%;
   height: 100%;
   position: relative;
   z-index: 10;
+}
+.wrapper #start .title {
+  width: 1200px;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  z-index: 11;
+}
+.wrapper #start .title h1 {
+  color: #fff;
+  font-size: 120px;
+  text-align: center;
+  font-weight: bold;
+}
+.wrapper #start .title .ani-dot {
+  position: absolute;
+  transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  z-index: 10;
+}
+.wrapper #start .title .ani-dot:nth-child(1) {
+  left: 0;
+  top: 50%;
+  animation: dotRotate1 70s infinite linear;
+}
+.wrapper #start .title .ani-dot:nth-child(2) {
+  left: 50%;
+  bottom: 0;
+  transform: rotate(210deg);
+  animation: dotRotate2 70s infinite linear;
+}
+.wrapper #start .title .ani-dot:nth-child(3) {
+  left: 50%;
+  top: 0;
+  transform: rotate(20deg);
+  animation: dotRotate3 70s infinite linear;
+}
+.wrapper #start .title .ani-dot:nth-child(4) {
+  right: 0;
+  top: 50%;
+  transform: rotate(100deg);
+  animation: dotRotate4 70s infinite linear;
+}
+.wrapper #start .title .ani-dot:after {
+  background-color: #ff0808;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 8px;
+  left: 0;
+  transform: translate3d(-50%, -50%, 0);
+  top: 0;
+  position: absolute;
+  width: 8px;
+  opacity: 0;
+  transition: opacity 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.wrapper #start .title .ani-dot:after {
+  opacity: 1;
+}
+.wrapper #start .title .ani-dot:before {
+  background: hsla(0, 0%, 100%, 0.3);
+  content: '';
+  display: block;
+  height: 0.5px;
+  left: 0;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 0;
+  width: 100vh;
+  opacity: 0;
+  transition: opacity 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.wrapper #start .title .ani-dot:before {
+  opacity: 1;
+}
+@keyframes dotRotate1 {
+  0% {
+    transform: rotate(120deg);
+  }
+  50% {
+    transform: rotate(300deg);
+  }
+  100% {
+    transform: rotate(480deg);
+  }
+}
+@keyframes dotRotate2 {
+  0% {
+    transform: rotate(210deg);
+  }
+  50% {
+    transform: rotate(390deg);
+  }
+  100% {
+    transform: rotate(570deg);
+  }
+}
+@keyframes dotRotate3 {
+  0% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(200deg);
+  }
+  100% {
+    transform: rotate(380deg);
+  }
+}
+@keyframes dotRotate4 {
+  0% {
+    transform: rotate(100deg);
+  }
+  50% {
+    transform: rotate(280deg);
+  }
+  100% {
+    transform: rotate(460deg);
+  }
 }

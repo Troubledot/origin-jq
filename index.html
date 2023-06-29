@@ -34,8 +34,15 @@
         <link href="./assets/fates-micro-final.d3e8d1865.min.css" rel="stylesheet" type="text/css" />
         <link href="./assets/css/origin.css" rel="stylesheet" type="text/css" />
         <script src="./assets/lib/tween/tweenjs.min.js"></script>
-        <script src="./assets/lib/magicscroll/minified/ScrollMagic.min.js"></script>
         <script src="./assets/lib/magicscroll/js/lib/greensock/TweenMax.min.js"></script>
+        <script src="./assets/lib/magicscroll/js/lib/greensock/plugins/ScrollToPlugin.min.js"></script>
+        <script src="./assets/lib/magicscroll/js/lib/jquery.min.js"></script>
+        <script src="./assets/lib/magicscroll/js/lib/modernizr.custom.min.js"></script>
+        <script src="./assets/lib/magicscroll/js/lib/iscroll-probe.js"></script>
+        <script src="./assets/lib/magicscroll/minified/ScrollMagic.min.js"></script>
+        <script src="./assets/lib/magicscroll/minified/plugins/animation.gsap.min.js"></script>
+        <script src="./assets/lib/magicscroll/minified/plugins/debug.addIndicators.min.js"></script>
+        <script src="./assets/lib/magicscroll/js/demo.js"></script>
         <script async src="./assets/lib/three/es-module-shims.js"></script>
 
         <script type="importmap">
@@ -91,374 +98,28 @@
         </style>
     </head>
     <body>
-        <div class="w-embed">
-            <style>
-                html {
-                    font-size: calc(0.625rem + 0.41666666666666663vw);
-                }
-                @media screen and (max-width: 1920px) {
-                    html {
-                        font-size: calc(0.65rem + 0.41666666666666674vw);
-                    }
-                }
-                @media screen and (max-width: 1440px) {
-                    html {
-                        font-size: calc(0.6253902185223725rem + 0.41623309053069724vw);
-                    }
-                }
-                @media screen and (max-width: 479px) {
-                    html {
-                        font-size: calc(0.6244769874476988rem + 0.8368200836820083vw);
-                    }
-                }
-
-                body {
-                    -webkit-font-smoothing: antialiased;
-                    -moz-osx-font-smoothing: grayscale;
-                }
-
-                ::-webkit-scrollbar {
-                    width: 0px;
-                }
-
-                ::-webkit-scrollbar-thumb {
-                    background: #ff0000;
-                }
-                .cursor-parent {
-                    pointer-events: none;
-                }
-                .dot-img-p {
-                    pointer-events: none;
-                }
-                .dot-img {
-                    pointer-events: none;
-                }
-                .nav-col .middle {
-                    backdrop-filter: blur(10px);
-                    -webkit-backdrop-filter: blur(10px);
-                }
-                .grad-btm {
-                    pointer-events: none;
-                }
-                .dot-shape {
-                    pointer-events: none;
-                }
-                .div-hide .ab-right {
-                    pointer-events: none;
-                }
-                .div-hide .ab-left {
-                    pointer-events: none;
-                }
-            </style>
-        </div>
-        <div class="intro-loader">
-            <div
-                id="startPlay"
-                data-w-id="fa271168-1f00-c39d-c4ce-356e2a59181b"
-                style="opacity: 1"
-                class="button-ghost ab"
-            >
-                <div class="div-hide intro">
-                    <div
-                        style="
-                            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                                rotateZ(0deg) skew(0deg, 0deg);
-                            transform-style: preserve-3d;
-                        "
-                        class="button-txt"
-                    >
-                        ENTER
-                    </div>
-                    <div
-                        style="
-                            transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                                rotateZ(0deg) skew(0deg, 0deg);
-                            transform-style: preserve-3d;
-                        "
-                        class="button-txt-ap"
-                    >
-                        ENTER
-                    </div>
-                </div>
-            </div>
-            <div class="parent ab div-hide">
-                <div class="slide-in">
-                    <div
-                        data-w-id="3d9f765f-220f-bef4-614b-191e0b52bf2a"
-                        style="
-                            opacity: 1;
-                            will-change: transform;
-                            transform: translate3d(-15.2702%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                                rotateZ(0deg) skew(0deg, 0deg);
-                            transform-style: preserve-3d;
-                        "
-                        class="super-text no-wrap intro"
-                    >
-                        EVACUATE EARTH * EVACUATE EARTH * EVACUATE EARTH * EVACUATE EARTH * EVACUATE EARTH * EVACUATE
-                        EARTH *
-                    </div>
-                </div>
-            </div>
-            <div class="img-parent">
-                <div
-                    data-bg="https://assets-global.website-files.com/62470c3b4051560083d62ef3/626fc50bbf12a47ca9e28c8a_Asteroid.jpg"
-                    class="img-child img-lazy lazyload"
-                >
-                    <img
-                        src="./assets/631f46d6d0cf7abce60aa4e3_Asteroid-1.png"
-                        loading="lazy"
-                        alt="Asteroid"
-                        class="ast"
-                    />
-                </div>
-            </div>
-            <div class="div-hide ab-btm">
-                <div data-w-id="decc30e9-efad-81dd-441c-83fe5453b4d3" class="text-sm fade">
-                    <span
-                        style="
-                            transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                                rotateZ(0deg) skew(0deg, 0deg);
-                            transform-style: preserve-3d;
-                        "
-                        class="span-text two"
-                        >EVACUATION BEGINS &nbsp;// 2022</span
-                    >
-                </div>
-            </div>
-            <nav class="nav" style="opacity: 1; display: flex">
-                <div class="container-lg nav-parent">
-                    <div class="nav-col middle">
-                        <div class="progress" style="will-change: width, height; width: 0%; height: 100%"></div>
-                        <div
-                            class="frost ab-bl"
-                            style="
-                                transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                                    rotateZ(0deg) skew(0deg, 0deg);
-                                transform-style: preserve-3d;
-                            "
-                        ></div>
-                        <div class="logo-pop-out">
-                            <img
-                                src="./assets/631f46d6d0cf7ad9110aa51a_Fates-Logotype.svg"
-                                loading="lazy"
-                                alt="Fates Logo"
-                                class="logo-small"
-                                style="opacity: 0"
-                            />
-                        </div>
-                        <a
-                            aria-label="Home"
-                            data-w-id="a34d7e2a-6311-e67e-5390-cdddda6d14a4"
-                            href="https://www.fates.world/"
-                            aria-current="page"
-                            class="logo w-inline-block w--current"
-                            style="
-                                transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                                    rotateZ(0deg) skew(0deg, 0deg);
-                                transform-style: preserve-3d;
-                            "
-                            ><img
-                                src="./assets/631f46d6d0cf7af5840aa4d0_Icon.svg"
-                                loading="lazy"
-                                alt="Fates Icon"
-                                class="icon-logo"
-                        /></a>
-                        <div
-                            id="muteButton"
-                            data-w-id="a34d7e2a-6311-e67e-5390-cdddda6d14a6"
-                            class="sound"
-                            style="
-                                transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                                    rotateZ(0deg) skew(0deg, 0deg);
-                                transform-style: preserve-3d;
-                            "
-                        >
-                            <div
-                                class="sound-icon"
-                                data-w-id="a34d7e2a-6311-e67e-5390-cdddda6d14a7"
-                                data-animation-type="lottie"
-                                data-src="https://assets-global.website-files.com/631f46d6d0cf7a86de0aa4c3/631f46d6d0cf7a2f720aa4e1_sound.json"
-                                data-loop="1"
-                                data-direction="1"
-                                data-autoplay="1"
-                                data-is-ix2-target="0"
-                                data-renderer="svg"
-                                data-default-duration="1.6666666666666667"
-                                data-duration="1"
-                                style="opacity: 1"
-                            >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 14 12"
-                                    width="14"
-                                    height="12"
-                                    preserveAspectRatio="xMidYMid meet"
-                                    style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px)"
-                                >
-                                    <defs>
-                                        <clippath id="__lottie_element_35">
-                                            <rect width="14" height="12" x="0" y="0"></rect>
-                                        </clippath>
-                                    </defs>
-                                    <g clip-path="url(#__lottie_element_35)">
-                                        <g transform="matrix(1,0,0,1,8.375,5.75)" opacity="1" style="display: block">
-                                            <g opacity="1" transform="matrix(1,0,0,1,0,0)">
-                                                <path
-                                                    stroke-linecap="butt"
-                                                    stroke-linejoin="miter"
-                                                    fill-opacity="0"
-                                                    stroke-miterlimit="4"
-                                                    stroke="rgb(255,255,255)"
-                                                    stroke-opacity="1"
-                                                    stroke-width="2"
-                                                    d=" M-6.375,-5 C-6.375,-5 -6.375,6.125 -6.375,6.125"
-                                                ></path>
-                                            </g>
-                                        </g>
-                                        <g transform="matrix(1,0,0,1,11.5,5.75)" opacity="1" style="display: block">
-                                            <g opacity="1" transform="matrix(1,0,0,1,0,0)">
-                                                <path
-                                                    stroke-linecap="butt"
-                                                    stroke-linejoin="miter"
-                                                    fill-opacity="0"
-                                                    stroke-miterlimit="4"
-                                                    stroke="rgb(255,255,255)"
-                                                    stroke-opacity="1"
-                                                    stroke-width="2"
-                                                    d=" M-6.375,-3.2760000228881836 C-6.375,-0.1509999930858612 -6.375,6.125 -6.375,6.125"
-                                                ></path>
-                                            </g>
-                                        </g>
-                                        <g
-                                            transform="matrix(1,0,0,1,14.468999862670898,5.75)"
-                                            opacity="1"
-                                            style="display: block"
-                                        >
-                                            <g opacity="1" transform="matrix(1,0,0,1,0,0)">
-                                                <path
-                                                    stroke-linecap="butt"
-                                                    stroke-linejoin="miter"
-                                                    fill-opacity="0"
-                                                    stroke-miterlimit="4"
-                                                    stroke="rgb(255,255,255)"
-                                                    stroke-opacity="1"
-                                                    stroke-width="2"
-                                                    d=" M-6.375,-3.2200000286102295 C-6.375,-0.07800000160932541 -6.375,6.125 -6.375,6.125"
-                                                ></path>
-                                            </g>
-                                        </g>
-                                        <g
-                                            transform="matrix(1,0,0,1,17.312000274658203,5.75)"
-                                            opacity="1"
-                                            style="display: block"
-                                        >
-                                            <g opacity="1" transform="matrix(1,0,0,1,0,0)">
-                                                <path
-                                                    stroke-linecap="butt"
-                                                    stroke-linejoin="miter"
-                                                    fill-opacity="0"
-                                                    stroke-miterlimit="4"
-                                                    stroke="rgb(255,255,255)"
-                                                    stroke-opacity="1"
-                                                    stroke-width="2"
-                                                    d=" M-6.375,-3.2200000286102295 C-6.375,-0.07800000160932541 -6.375,6.125 -6.375,6.125"
-                                                ></path>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="nav-col">
-                        <div class="border-line-top intro" style="width: 100%; height: 1px"></div>
-                        <div class="border-line-right intro" style="width: 1px; height: 100%"></div>
-                        <div class="border-line-btm-right intro" style="width: 100%; height: 1px"></div>
-                        <div class="size-two">
-                            <a
-                                href="https://www.fates.world/divisions"
-                                target="_blank"
-                                class="nav-button w-inline-block"
-                                style="opacity: 1"
-                                ><div class="div-hide intro hide">
-                                    <div
-                                        class="button-txt"
-                                        style="
-                                            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                    >
-                                        DIVISIONS
-                                    </div>
-                                    <div
-                                        class="button-txt-ap"
-                                        style="
-                                            transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                    >
-                                        DIVISIONS
-                                    </div>
-                                </div>
-                                <div class="border-line-right" style="width: 1px; height: 100%"></div>
-                                <img
-                                    src="./assets/631f46d6d0cf7a2d1a0aa511_Discord.svg"
-                                    loading="lazy"
-                                    width="32"
-                                    alt="Join Discord" />
-                                <div class="xsm-text fade">002</div>
-                                <div class="bg-whipe" style="width: 100%; height: 0%"></div></a
-                            ><a
-                                href="https://twitter.com/fates_world"
-                                rel="noopener"
-                                target="_blank"
-                                class="nav-button w-inline-block"
-                                style="opacity: 1"
-                                ><div class="div-hide intro hide">
-                                    <div
-                                        class="button-txt"
-                                        style="
-                                            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                    >
-                                        EVACUATE
-                                    </div>
-                                    <div
-                                        class="button-txt-ap"
-                                        style="
-                                            transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                    >
-                                        EVACUATE
-                                    </div>
-                                </div>
-                                <div class="xsm-text fade">003</div>
-                                <div class="bg-whipe" style="width: 100%; height: 0%"></div>
-                                <img
-                                    src="./assets/631f46d6d0cf7a0d8b0aa510_Twitter.svg"
-                                    loading="lazy"
-                                    width="32"
-                                    alt="Twitter" />
-                                <div class="border-line-right" style="width: 1px; height: 100%"></div
-                            ></a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <div class="scroll-warp" id="scrollWrap">
-            <section>
-                <div class="bg"></div>
-                <div class="top-content" id="canvas"></div>
-            </section>
-        </div>
         <div class="wrapper">
+            <section id="start">
+                <div class="bg"></div>
+                <div class="title">
+                    <span class="ani-dot"></span>
+                    <span class="ani-dot"></span>
+                    <span class="ani-dot"></span>
+                    <span class="ani-dot"></span>
+                    <h1>
+                        <span>O</span>
+                        <span>R</span>
+                        <span>I</span>
+                        <span>G</span>
+                        <span>I</span>
+                        <span>N</span>
+                    </h1>
+                </div>
+                <div class="top-content" id="canvas"></div>
+                <script type="module" src="./assets/js/scroll.js">
+                    $('#start h1').wrapEach(/(.)/g, '<span>$1</span>');
+                </script>
+            </section>
             <div data-w-id="c20caa1b-f7a1-5522-1baf-1f236d7703c5" class="elements-parent size-m">
                 <div id="about" class="scroll-marker"></div>
                 <div class="hero min">
@@ -3679,7 +3340,6 @@
         ></script>
         <script type="module">
             import { initEarth, animate, upEarth, starForge, onWindowResize } from './assets/js/3d.js';
-            starForge();
             initEarth();
             animate();
             // upEarth();
@@ -3744,16 +3404,6 @@
                 });
             });
         </script>
-
-        <script>
-            Webflow.push(function () {
-                $('.modal-bg').click(function (e) {
-                    e.preventDefault();
-                    $('body').css('overflow', 'auto');
-                });
-            });
-        </script>
-        <script src="./assets/player.js"></script>
         <script src="./assets/lazysizes-umd.min.js"></script>
     </body>
 </html>

@@ -100,8 +100,10 @@ export const initEarth = () => {
     scene.add(axesHelper);
 };
 
-export const upEarth = () => {
-    new TWEEN.Tween(earthGroup.position).delay(2000).to({ x: 0, y: -21, z: 5 }, 1000).start();
+export const upEarth = (y, z) => {
+    if (earthGroup) {
+        new TWEEN.Tween(earthGroup.position).to({ x: 0, y, z }, 100).start();
+    }
 };
 
 export const animate = () => {
