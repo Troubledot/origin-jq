@@ -34,6 +34,8 @@
         <link href="./assets/fates-micro-final.d3e8d1865.min.css" rel="stylesheet" type="text/css" />
         <link href="./assets/css/origin.css" rel="stylesheet" type="text/css" />
         <script src="./assets/lib/tween/tweenjs.min.js"></script>
+        <script src="./assets/lib/magicscroll/minified/ScrollMagic.min.js"></script>
+        <script src="./assets/lib/magicscroll/js/lib/greensock/TweenMax.min.js"></script>
         <script async src="./assets/lib/three/es-module-shims.js"></script>
 
         <script type="importmap">
@@ -3678,6 +3680,7 @@
         <script type="module">
             import { initEarth, animate, upEarth, starForge, onWindowResize } from './assets/js/3d.js';
             starForge();
+            initEarth();
             animate();
             // upEarth();
             window.addEventListener('resize', onWindowResize);
