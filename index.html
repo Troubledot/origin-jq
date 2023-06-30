@@ -32,6 +32,7 @@
         <meta content="summary_large_image" name="twitter:card" />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <link href="./assets/fates-micro-final.d3e8d1865.min.css" rel="stylesheet" type="text/css" />
+        <link href="./assets/lib/swiper/swiper.min.css" rel="stylesheet" type="text/css" />
         <link href="./assets/css/origin.css" rel="stylesheet" type="text/css" />
         <script src="./assets/lib/tween/tweenjs.min.js"></script>
         <script src="./assets/lib/magicscroll/js/lib/greensock/TweenMax.min.js"></script>
@@ -43,6 +44,7 @@
         <script src="./assets/lib/magicscroll/minified/plugins/animation.gsap.min.js"></script>
         <script src="./assets/lib/magicscroll/minified/plugins/debug.addIndicators.min.js"></script>
         <script src="./assets/lib/magicscroll/js/demo.js"></script>
+        <script src="./assets/lib/swiper/swiper.min.js"></script>
         <script async src="./assets/lib/three/es-module-shims.js"></script>
 
         <script type="importmap">
@@ -120,355 +122,247 @@
                     $('#start h1').wrapEach(/(.)/g, '<span>$1</span>');
                 </script>
             </section>
-            <div data-w-id="c20caa1b-f7a1-5522-1baf-1f236d7703c5" class="elements-parent size-m">
-                <div id="about" class="scroll-marker"></div>
-                <div class="hero min">
-                  <div class="title"></div>
-                  <p></p>
-                </div>
-                <div class="hero">
-                    <div class="grad-btm"></div>
-                    <div class="img-parent">
-                        <div
-                            data-bg="https://assets-global.website-files.com/62470c3b4051560083d62ef3/624725cf5320ab637e705eb5_Hero%20Image%20(7).jpg"
-                            class="img-child img-lazy lazyloaded"
-                            style="
-                                will-change: transform;
-                                transform: translate3d(0px, -1.6657%, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg)
-                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                transform-style: preserve-3d;
-                                background-image: url('https://assets-global.website-files.com/62470c3b4051560083d62ef3/624725cf5320ab637e705eb5_Hero%20Image%20(7).jpg');
-                            "
-                        ></div>
-                    </div>
-                </div>
-                <div class="grid-parent top">
-                    <div class="row"></div>
-                    <div class="row"></div>
-                    .hs
-                    <div class="row">
-                        <img
-                            src="./assets/631f46d6d0cf7ad8b30aa4c9_lines.svg"
-                            loading="lazy"
-                            style="
-                                transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                                    rotateZ(0deg) skew(0deg, 0deg);
-                                transform-style: preserve-3d;
-                            "
-                            alt=""
-                            class="lines ab-bl intro"
-                        />
-                    </div>
-                    <div class="row"></div>
-                </div>
-                <div
-                    data-w-id="7cc91950-0bc0-a573-7e00-97a3129fb711"
-                    class="side-half one"
-                    style="
-                        will-change: transform;
-                        transform: translate3d(0px, 0.01%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                            rotateZ(0deg) skew(0deg, 0deg);
-                        transform-style: preserve-3d;
-                    "
-                >
-                    <div data-w-id="c98af8aa-e0d2-fc15-7770-526c88627f59" class="number-side">
-                        <div class="fade">
-                            <span
+
+            <section class="head-section height">
+                <div data-w-id="c20caa1b-f7a1-5522-1baf-1f236d7703c5" class="elements-parent size-m">
+                    <div class="hero">
+                        <div class="img-parent">
+                            <div
+                                data-bg="https://assets-global.website-files.com/62470c3b4051560083d62ef3/624725cf5320ab637e705eb5_Hero%20Image%20(7).jpg"
+                                class="img-child img-lazy lazyloaded"
                                 style="
-                                    transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                                        rotateZ(0deg) skew(0deg, 0deg);
+                                    will-change: transform;
+                                    transform: translate3d(0px, -1.6657%, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg)
+                                        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
                                     transform-style: preserve-3d;
+                                    background-image: url('https://assets-global.website-files.com/62470c3b4051560083d62ef3/624725cf5320ab637e705eb5_Hero%20Image%20(7).jpg');
                                 "
-                                class="span-text one"
-                                >0</span
-                            ><span
-                                style="
-                                    transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                                        rotateZ(0deg) skew(0deg, 0deg);
-                                    transform-style: preserve-3d;
-                                "
-                                class="span-text two"
-                                >0</span
-                            ><span
-                                style="
-                                    transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                                        rotateZ(0deg) skew(0deg, 0deg);
-                                    transform-style: preserve-3d;
-                                "
-                                class="span-text three"
-                                >1</span
-                            >
+                            ></div>
                         </div>
                     </div>
+                    <div class="grid-parent top">
+                        <div class="row"></div>
+                        <div class="row"></div>
+                        <div class="row">
+                            <img
+                                src="./assets/631f46d6d0cf7ad8b30aa4c9_lines.svg"
+                                loading="lazy"
+                                style="
+                                    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                                        rotateZ(0deg) skew(0deg, 0deg);
+                                    transform-style: preserve-3d;
+                                "
+                                alt=""
+                                class="lines ab-bl intro"
+                            />
+                        </div>
+                        <div class="row"></div>
+                    </div>
                     <div
-                        class="lines ab-bl height"
+                        data-w-id="7cc91950-0bc0-a573-7e00-97a3129fb711"
+                        class="side-half one"
                         style="
-                            transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                            will-change: transform;
+                            transform: translate3d(0px, 0.01%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
                                 rotateZ(0deg) skew(0deg, 0deg);
                             transform-style: preserve-3d;
                         "
-                    ></div>
-                    <div style="width: 100%; height: 100%" class="bg-whipe blend"></div>
-                </div>
-                <div class="grid-parent">
-                    <div class="circle-parent">
-                        <div
-                            data-is-ix2-target="1"
-                            class="circle-large"
-                            data-w-id="03898ebc-a474-4cb5-4a11-2239a20341e9"
-                            data-animation-type="lottie"
-                            data-src="https://assets-global.website-files.com/631f46d6d0cf7a86de0aa4c3/631f46d6d0cf7a31600aa4c8_circle-large.json"
-                            data-loop="0"
-                            data-direction="1"
-                            data-autoplay="0"
-                            data-renderer="svg"
-                            data-default-duration="2"
-                            data-duration="0"
-                            data-ix2-initial-state="0"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 2560 2560"
-                                width="2560"
-                                height="2560"
-                                preserveAspectRatio="xMidYMid meet"
-                                style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px)"
-                            >
-                                <defs>
-                                    <clippath id="__lottie_element_28">
-                                        <rect width="2560" height="2560" x="0" y="0"></rect>
-                                    </clippath>
-                                </defs>
-                                <g clip-path="url(#__lottie_element_28)">
-                                    <g transform="matrix(1,0,0,1,1280,1280)" opacity="1" style="display: block"></g>
-                                    <g
-                                        transform="matrix(1,0,0,1,1296.3599853515625,1267.89599609375)"
-                                        opacity="1"
-                                        style="display: block"
-                                    >
-                                        <g
-                                            opacity="1"
-                                            transform="matrix(1.0216799974441528,0,0,1.0216799974441528,-16.360000610351562,12.104000091552734)"
-                                        >
-                                            <path
-                                                stroke-linecap="butt"
-                                                stroke-linejoin="miter"
-                                                fill-opacity="0"
-                                                stroke-miterlimit="4"
-                                                stroke="rgb(255,255,255)"
-                                                stroke-opacity="1"
-                                                stroke-width="1"
-                                                d=" M0,-1252.052001953125 C691.0075073242188,-1252.052001953125 1252.052001953125,-691.0075073242188 1252.052001953125,0 C1252.052001953125,691.0075073242188 691.0075073242188,1252.052001953125 0,1252.052001953125 C-691.0075073242188,1252.052001953125 -1252.052001953125,691.0075073242188 -1252.052001953125,0 C-1252.052001953125,-690.7449951171875 -691.4340209960938,-1251.6259765625 -0.7879999876022339,-1252.052001953125"
-                                            ></path>
-                                        </g>
-                                    </g>
-                                </g>
-                            </svg>
+                    >
+                        <div data-w-id="c98af8aa-e0d2-fc15-7770-526c88627f59" class="number-side">
+                            <div class="fade">
+                                <span
+                                    style="
+                                        transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+                                            rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                                        transform-style: preserve-3d;
+                                    "
+                                    class="span-text one"
+                                    >0</span
+                                ><span
+                                    style="
+                                        transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+                                            rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                                        transform-style: preserve-3d;
+                                    "
+                                    class="span-text two"
+                                    >0</span
+                                ><span
+                                    style="
+                                        transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+                                            rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                                        transform-style: preserve-3d;
+                                    "
+                                    class="span-text three"
+                                    >1</span
+                                >
+                            </div>
                         </div>
                         <div
-                            data-is-ix2-target="1"
-                            class="circle-medium"
-                            data-w-id="3c138120-7977-15cb-3942-b580a0c133e6"
-                            data-animation-type="lottie"
-                            data-src="https://assets-global.website-files.com/631f46d6d0cf7a86de0aa4c3/631f46d6d0cf7a31600aa4c8_circle-large.json"
-                            data-loop="0"
-                            data-direction="1"
-                            data-autoplay="0"
-                            data-renderer="svg"
-                            data-default-duration="2"
-                            data-duration="0"
-                            data-ix2-initial-state="0"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 2560 2560"
-                                width="2560"
-                                height="2560"
-                                preserveAspectRatio="xMidYMid meet"
-                                style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px)"
+                            class="lines ab-bl height"
+                            style="
+                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                                    rotateZ(0deg) skew(0deg, 0deg);
+                                transform-style: preserve-3d;
+                            "
+                        ></div>
+                        <div style="width: 100%; height: 100%" class="bg-whipe blend"></div>
+                    </div>
+                    <div class="grid-parent">
+                        <div class="circle-parent">
+                            <div
+                                data-is-ix2-target="1"
+                                class="circle-large"
+                                data-w-id="03898ebc-a474-4cb5-4a11-2239a20341e9"
+                                data-animation-type="lottie"
+                                data-src="https://assets-global.website-files.com/631f46d6d0cf7a86de0aa4c3/631f46d6d0cf7a31600aa4c8_circle-large.json"
+                                data-loop="0"
+                                data-direction="1"
+                                data-autoplay="0"
+                                data-renderer="svg"
+                                data-default-duration="2"
+                                data-duration="0"
+                                data-ix2-initial-state="0"
                             >
-                                <defs>
-                                    <clippath id="__lottie_element_68">
-                                        <rect width="2560" height="2560" x="0" y="0"></rect>
-                                    </clippath>
-                                </defs>
-                                <g clip-path="url(#__lottie_element_68)">
-                                    <g transform="matrix(1,0,0,1,1280,1280)" opacity="1" style="display: block"></g>
-                                    <g
-                                        transform="matrix(1,0,0,1,1296.3599853515625,1267.89599609375)"
-                                        opacity="1"
-                                        style="display: block"
-                                    >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 2560 2560"
+                                    width="2560"
+                                    height="2560"
+                                    preserveAspectRatio="xMidYMid meet"
+                                    style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px)"
+                                >
+                                    <defs>
+                                        <clippath id="__lottie_element_28">
+                                            <rect width="2560" height="2560" x="0" y="0"></rect>
+                                        </clippath>
+                                    </defs>
+                                    <g clip-path="url(#__lottie_element_28)">
+                                        <g transform="matrix(1,0,0,1,1280,1280)" opacity="1" style="display: block"></g>
                                         <g
+                                            transform="matrix(1,0,0,1,1296.3599853515625,1267.89599609375)"
                                             opacity="1"
-                                            transform="matrix(1.0216799974441528,0,0,1.0216799974441528,-16.360000610351562,12.104000091552734)"
+                                            style="display: block"
                                         >
-                                            <path
-                                                stroke-linecap="butt"
-                                                stroke-linejoin="miter"
-                                                fill-opacity="0"
-                                                stroke-miterlimit="4"
-                                                stroke="rgb(255,255,255)"
-                                                stroke-opacity="1"
-                                                stroke-width="1"
-                                                d=" M0,-1252.052001953125 C691.0075073242188,-1252.052001953125 1252.052001953125,-691.0075073242188 1252.052001953125,0 C1252.052001953125,691.0075073242188 691.0075073242188,1252.052001953125 0,1252.052001953125 C-691.0075073242188,1252.052001953125 -1252.052001953125,691.0075073242188 -1252.052001953125,0 C-1252.052001953125,-690.7449951171875 -691.4340209960938,-1251.6259765625 -0.7879999876022339,-1252.052001953125"
-                                            ></path>
+                                            <g
+                                                opacity="1"
+                                                transform="matrix(1.0216799974441528,0,0,1.0216799974441528,-16.360000610351562,12.104000091552734)"
+                                            >
+                                                <path
+                                                    stroke-linecap="butt"
+                                                    stroke-linejoin="miter"
+                                                    fill-opacity="0"
+                                                    stroke-miterlimit="4"
+                                                    stroke="rgb(255,255,255)"
+                                                    stroke-opacity="1"
+                                                    stroke-width="1"
+                                                    d=" M0,-1252.052001953125 C691.0075073242188,-1252.052001953125 1252.052001953125,-691.0075073242188 1252.052001953125,0 C1252.052001953125,691.0075073242188 691.0075073242188,1252.052001953125 0,1252.052001953125 C-691.0075073242188,1252.052001953125 -1252.052001953125,691.0075073242188 -1252.052001953125,0 C-1252.052001953125,-690.7449951171875 -691.4340209960938,-1251.6259765625 -0.7879999876022339,-1252.052001953125"
+                                                ></path>
+                                            </g>
                                         </g>
                                     </g>
-                                </g>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="row flex">
-                        <div style="width: 1px; height: 100%" class="border-line-right">
+                                </svg>
+                            </div>
                             <div
-                                class="pulse-line-one"
-                                style="
-                                    will-change: transform;
-                                    transform: translate3d(0px, 133.314rem, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                    transform-style: preserve-3d;
-                                "
-                            ></div>
+                                data-is-ix2-target="1"
+                                class="circle-medium"
+                                data-w-id="3c138120-7977-15cb-3942-b580a0c133e6"
+                                data-animation-type="lottie"
+                                data-src="https://assets-global.website-files.com/631f46d6d0cf7a86de0aa4c3/631f46d6d0cf7a31600aa4c8_circle-large.json"
+                                data-loop="0"
+                                data-direction="1"
+                                data-autoplay="0"
+                                data-renderer="svg"
+                                data-default-duration="2"
+                                data-duration="0"
+                                data-ix2-initial-state="0"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 2560 2560"
+                                    width="2560"
+                                    height="2560"
+                                    preserveAspectRatio="xMidYMid meet"
+                                    style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px)"
+                                >
+                                    <defs>
+                                        <clippath id="__lottie_element_68">
+                                            <rect width="2560" height="2560" x="0" y="0"></rect>
+                                        </clippath>
+                                    </defs>
+                                    <g clip-path="url(#__lottie_element_68)">
+                                        <g transform="matrix(1,0,0,1,1280,1280)" opacity="1" style="display: block"></g>
+                                        <g
+                                            transform="matrix(1,0,0,1,1296.3599853515625,1267.89599609375)"
+                                            opacity="1"
+                                            style="display: block"
+                                        >
+                                            <g
+                                                opacity="1"
+                                                transform="matrix(1.0216799974441528,0,0,1.0216799974441528,-16.360000610351562,12.104000091552734)"
+                                            >
+                                                <path
+                                                    stroke-linecap="butt"
+                                                    stroke-linejoin="miter"
+                                                    fill-opacity="0"
+                                                    stroke-miterlimit="4"
+                                                    stroke="rgb(255,255,255)"
+                                                    stroke-opacity="1"
+                                                    stroke-width="1"
+                                                    d=" M0,-1252.052001953125 C691.0075073242188,-1252.052001953125 1252.052001953125,-691.0075073242188 1252.052001953125,0 C1252.052001953125,691.0075073242188 691.0075073242188,1252.052001953125 0,1252.052001953125 C-691.0075073242188,1252.052001953125 -1252.052001953125,691.0075073242188 -1252.052001953125,0 C-1252.052001953125,-690.7449951171875 -691.4340209960938,-1251.6259765625 -0.7879999876022339,-1252.052001953125"
+                                                ></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div style="display: block; width: 1px; height: 100%" class="border-line-right strong">
-                            <div
-                                class="pulse-line-three"
-                                style="
-                                    will-change: transform;
-                                    transform: translate3d(0px, 26.6715rem, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                    transform-style: preserve-3d;
-                                "
-                            ></div>
+                        <div class="flex row">
+                            <div style="width: 1px; height: 100%" class="border-line-right">
+                                <div
+                                    class="pulse-line-one"
+                                    style="
+                                        will-change: transform;
+                                        transform: translate3d(0px, 133.314rem, 0px) scale3d(1, 1, 1) rotateX(0deg)
+                                            rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                                        transform-style: preserve-3d;
+                                    "
+                                ></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div style="width: 1px; height: 100%" class="border-line-right">
-                            <div
-                                class="pulse-line-two"
-                                style="
-                                    will-change: transform;
-                                    transform: translate3d(0px, 99.9855rem, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                    transform-style: preserve-3d;
-                                "
-                            ></div>
+                        <div class="row">
+                            <div style="display: block; width: 1px; height: 100%" class="border-line-right strong">
+                                <div
+                                    class="pulse-line-three"
+                                    style="
+                                        will-change: transform;
+                                        transform: translate3d(0px, 26.6715rem, 0px) scale3d(1, 1, 1) rotateX(0deg)
+                                            rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                                        transform-style: preserve-3d;
+                                    "
+                                ></div>
+                            </div>
                         </div>
+                        <div class="row">
+                            <div style="width: 1px; height: 100%" class="border-line-right">
+                                <div
+                                    class="pulse-line-two"
+                                    style="
+                                        will-change: transform;
+                                        transform: translate3d(0px, 99.9855rem, 0px) scale3d(1, 1, 1) rotateX(0deg)
+                                            rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                                        transform-style: preserve-3d;
+                                    "
+                                ></div>
+                            </div>
+                        </div>
+                        <div class="row"></div>
                     </div>
-                    <div class="row"></div>
                 </div>
-            </div>
-            <section class="head-section height">
-                <div class="border-line-top"></div>
-                <div class="spacer-large"></div>
                 <div class="text-width-one align-centre">
-                    <div class="div-hide align-centre">
-                        <div data-w-id="4085e420-8b72-8ef7-9cff-b0140c662e55" class="text-sm caps fade">
-                            <span
-                                style="
-                                    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                                        rotateZ(0deg) skew(0deg, 0deg);
-                                    transform-style: preserve-3d;
-                                "
-                                class="span-text one"
-                                >E</span
-                            ><span
-                                style="
-                                    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                                        rotateZ(0deg) skew(0deg, 0deg);
-                                    transform-style: preserve-3d;
-                                "
-                                class="span-text two"
-                                >A</span
-                            ><span
-                                style="
-                                    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                                        rotateZ(0deg) skew(0deg, 0deg);
-                                    transform-style: preserve-3d;
-                                "
-                                class="span-text three"
-                                >R</span
-                            ><span
-                                style="
-                                    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                                        rotateZ(0deg) skew(0deg, 0deg);
-                                    transform-style: preserve-3d;
-                                "
-                                class="span-text four"
-                                >T</span
-                            ><span
-                                style="
-                                    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                                        rotateZ(0deg) skew(0deg, 0deg);
-                                    transform-style: preserve-3d;
-                                "
-                                class="span-text five"
-                                >H</span
-                            >
-                            <span
-                                style="
-                                    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                                        rotateZ(0deg) skew(0deg, 0deg);
-                                    transform-style: preserve-3d;
-                                "
-                                class="span-text six"
-                                >I</span
-                            ><span
-                                style="
-                                    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                                        rotateZ(0deg) skew(0deg, 0deg);
-                                    transform-style: preserve-3d;
-                                "
-                                class="span-text seven"
-                                >S</span
-                            >
-                            <span
-                                style="
-                                    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                                        rotateZ(0deg) skew(0deg, 0deg);
-                                    transform-style: preserve-3d;
-                                "
-                                class="span-text eight"
-                                >L</span
-                            ><span
-                                style="
-                                    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                                        rotateZ(0deg) skew(0deg, 0deg);
-                                    transform-style: preserve-3d;
-                                "
-                                class="span-text nine"
-                                >O</span
-                            ><span
-                                style="
-                                    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                                        rotateZ(0deg) skew(0deg, 0deg);
-                                    transform-style: preserve-3d;
-                                "
-                                class="span-text ten"
-                                >S</span
-                            ><span
-                                style="
-                                    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                                        rotateZ(0deg) skew(0deg, 0deg);
-                                    transform-style: preserve-3d;
-                                "
-                                class="span-text eleven"
-                                >T</span
-                            >
-                        </div>
-                    </div>
-                    <div class="spacer-small"></div>
-                    <h2 data-w-id="e28c22c9-d6b4-2176-1b3a-3a913f88f896" class="caps">
-                        <span class="span-text one fade-text inline-m" style="opacity: 1"
-                            >FATES IS AN IMMERSIVE, NARRATIVE-DRIVEN,</span
-                        ><span class="span-text two fade-text inline-m" style="opacity: 1">EXPERIENCE</span>
-                        <span class="span-text two inline-m" style="opacity: 1">FOLLOWING THE NEXT</span>
-                        <span class="span-text three inline-m" style="opacity: 1">STEP IN HUMAN SURVIVAL</span>
+                    <h2 class="caps">
+                        <span class="span-text three inline-m" style="opacity: 1">ORIGIN</span>
                     </h2>
-                    <div class="spacer-medium"></div>
+                    <p>ORIGIN GAMEFI PROTOCOL PROVIDER.</p>
                     <div class="inline">
                         <a
                             rel="noopener"
@@ -476,11 +370,7 @@
                             href="https://www.fates.world/divisions"
                             target="_blank"
                             class="btn-parent w-inline-block"
-                            ><img
-                                src="./assets/631f46d6d0cf7a2d1a0aa511_Discord.svg"
-                                loading="lazy"
-                                alt="Join Discord"
-                                class="btn-icon" />
+                        >
                             <div class="div-hide">
                                 <div
                                     style="
@@ -490,7 +380,7 @@
                                     "
                                     class="button-txt"
                                 >
-                                    JOIN DISCORD
+                                    COMMING SOON
                                 </div>
                                 <div
                                     style="
@@ -507,43 +397,64 @@
                         ></a>
                     </div>
                 </div>
-                <div class="spacer-large"></div>
-                <div class="grid-parent">
-                    <div class="row flex">
-                        <div class="border-line-right hide" style="width: 1px; height: 100%"></div>
-                    </div>
-                    <div class="row"></div>
-                    <div class="row"><div class="border-line-right hide" style="width: 1px; height: 100%"></div></div>
-                    <div class="row"></div>
-                </div>
             </section>
-            <section class="head-section height">
-                <div class="grid-parent">
-                    <div class="row flex"><div style="width: 1px; height: 100%" class="border-line-right"></div></div>
-                    <div class="row flex-centre"></div>
-                </div>
-                <div class="grid-parent flip">
-                    <div class="row">
-                        <div class="spacer-large"></div>
-                        <div class="text-width-three">
-                            <h2 data-w-id="f52563eb-c34d-f899-054c-46e8374553a7" class="align-centre-mobile">
-                                <span style="opacity: 1" class="span-text one">THE FUTURE </span
-                                ><span style="opacity: 1" class="span-text two">OF HUMANITY</span>
-                            </h2>
+            <section class="head-section height hope">
+                <div class="container">
+                    <div class="hope">
+                        We hope to address all the aforementioned issues for early adopters in this field
+                    </div>
+                    <h1 class="hope-title">
+                        And To Promptly Change The Ciews Of Game Players Around The World, Welcoming Them To Enjoy An
+                        Experience Of Fulfilling Their True Promises.
+                    </h1>
+                    <div class="contacts">
+                        <div class="item discord">Discord</div>
+                        <div class="item telegram">Telegram</div>
+                        <div class="item twitter">Twitter</div>
+                        <div class="item medium">Medium</div>
+                    </div>
+                    <div class="dev">
+                        <div class="item">
+                            <div class="num">01</div>
+                            <img src="" alt="" />
+                            <div class="title">Development</div>
+                            <p>Mauris condimentumulla eget.</p>
+                        </div>
+                        <div class="item">
+                            <div class="num">01</div>
+                            <img src="" alt="" />
+                            <div class="title">Development</div>
+                            <p>Mauris condimentumulla eget.</p>
+                        </div>
+                        <div class="item">
+                            <div class="num">01</div>
+                            <img src="" alt="" />
+                            <div class="title">Development</div>
+                            <p>Mauris condimentumulla eget.</p>
+                        </div>
+                        <div class="item">
+                            <div class="num">01</div>
+                            <img src="" alt="" />
+                            <div class="title">Development</div>
+                            <p>Mauris condimentumulla eget.</p>
+                        </div>
+                        <div class="bot">
+                            <div class="amount">
+                                <div class="val">$2.2 billion</div>
+                                <div class="label">REWARDS DISTRIBUTED TO PLAYERS</div>
+                                <div class="val">2.2 billion</div>
+                                <div class="label">Abyx’s loyal players</div>
+                            </div>
+                            <div class="intro">
+                                <p>Nearly 22000 users have benefited from the</p>
+                                <p>Origin platform, while also providing</p>
+                                <p>developers with 22000 project benefits. On</p>
+                                <p>Origin, 22000 users have been playing games</p>
+                                <p>released by Origin for 30 consecutive days.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="row flex-right pad">
-                        <div class="text-width-two">
-                            <p data-w-id="f52563eb-c34d-f899-054c-46e8374553d4" style="opacity: 1" class="indenet">
-                                A mysterious and unstoppable force is consuming our planet. Known only as the Braid,
-                                this dangerous anomaly is a threat to our entire existence. To ensure the survival of
-                                our species, we must retreat into the solar system and establish new homes among the
-                                stars.
-                            </p>
-                        </div>
-                    </div>
                 </div>
-                <div class="border-line-bottom"></div>
             </section>
             <section class="bg-dark">
                 <div class="parent">
@@ -566,7 +477,7 @@
                                 transform-style: preserve-3d;
                             "
                         >
-                            FATES PROGRAM * FATES PROGRAM * FATES PROGRAM *
+                            ORIGIN PROGRAM * ORIGIN PROGRAM * ORIGIN PROGRAM *
                         </div>
                     </div>
                     <div class="parent">
@@ -746,7 +657,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div id="w-node-_7dcbe0e2-d3dd-39a7-b986-40ba2afd0e99-d1ac47f4" class="parent card">
+                                <div
+                                    id="w-node-_7dcbe0e2-d3dd-39a7-b986-40ba2afd0e99-d1ac47f4"
+                                    class="parent card best"
+                                >
                                     <div class="div-hide ab-tl">
                                         <div data-w-id="34f3e71b-4c5a-d86d-29c2-09871280c663" class="text-sm caps fade">
                                             <span
@@ -756,7 +670,7 @@
                                                         rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
                                                     transform-style: preserve-3d;
                                                 "
-                                                >PODS</span
+                                                >BEST</span
                                             ><span
                                                 style="
                                                     transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
@@ -774,7 +688,7 @@
                                                     transform-style: preserve-3d;
                                                 "
                                                 class="span-text one"
-                                                >LAUNCHED</span
+                                                >GAME</span
                                             ><span
                                                 style="
                                                     transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
@@ -785,6 +699,37 @@
                                             ></span>
                                         </div>
                                     </div>
+                                    <div class="best-game">
+                                        <div>
+                                            <div class="title">CYPTO RACEING CAR</div>
+                                        </div>
+                                        <div class="aya">
+                                            <div class="item">
+                                                <div class="label">BEST GAME</div>
+                                                <div class="val">10,000</div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="label">BEST GAME</div>
+                                                <div class="val">10,000</div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="label">BEST GAME</div>
+                                                <div class="val">10,000</div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="label">BEST GAME</div>
+                                                <div class="val">10,000</div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="label">BEST GAME</div>
+                                                <div class="val">10,000</div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="label">BEST GAME</div>
+                                                <div class="val">10,000</div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div
                                         id="w-node-_1cd76c88-3ff9-e5d8-0877-dadecaedc79f-d1ac47f4"
                                         class="ab-bl bottom"
@@ -793,14 +738,10 @@
                                             <a
                                                 rel="noopener"
                                                 data-w-id="b9431fe5-42db-d18f-f665-4bfc0b038db4"
-                                                href="https://www.fates.world/divisions"
+                                                href="#"
                                                 target="_blank"
                                                 class="btn-parent w-inline-block"
-                                                ><img
-                                                    src="./assets/631f46d6d0cf7a2d1a0aa511_Discord.svg"
-                                                    loading="lazy"
-                                                    alt="Join Discord"
-                                                    class="btn-icon" />
+                                            >
                                                 <div class="div-hide">
                                                     <div
                                                         style="
@@ -811,7 +752,7 @@
                                                         "
                                                         class="button-txt"
                                                     >
-                                                        JOIN DISCORD
+                                                        ENTER GAME>>
                                                     </div>
                                                     <div
                                                         style="
@@ -822,7 +763,7 @@
                                                         "
                                                         class="button-txt-ap"
                                                     >
-                                                        JOIN&nbsp;DISCORD
+                                                        ENTER GAME>>
                                                     </div>
                                                 </div>
                                                 <div style="width: 100%; height: 0%" class="bg-whipe"></div
@@ -830,48 +771,11 @@
                                         </div>
                                         <div class="border-line-top"></div>
                                         <img
-                                            src="./assets/631f46d6d0cf7a04a40aa4da_icon.svg"
+                                            src="./assets/images/logo.png"
                                             loading="lazy"
-                                            alt="Fates Icon"
-                                            class="icon-sm"
+                                            alt="Icon"
+                                            class="best-logo"
                                         />
-                                    </div>
-                                    <div data-w-id="da8f35ea-1ed1-93cf-9e17-8ba94dee62ef" class="div-hide">
-                                        <div class="super-number">
-                                            <span
-                                                style="
-                                                    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                    transform-style: preserve-3d;
-                                                "
-                                                class="span-text one"
-                                                >2</span
-                                            ><span
-                                                style="
-                                                    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                    transform-style: preserve-3d;
-                                                "
-                                                class="span-text two"
-                                                >0</span
-                                            ><span
-                                                style="
-                                                    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                    transform-style: preserve-3d;
-                                                "
-                                                class="span-text three"
-                                                >2</span
-                                            ><span
-                                                style="
-                                                    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                    transform-style: preserve-3d;
-                                                "
-                                                class="span-text four"
-                                                >3</span
-                                            >
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -927,222 +831,75 @@
                         </div>
                     </div>
                 </div>
-                <section class="head-section height sm">
-                    <div class="grid-parent">
-                        <div class="row"><div style="width: 1px; height: 100%" class="border-line-right"></div></div>
-                        <div class="row flex-right"></div>
-                    </div>
-                    <div class="grid-parent flip">
-                        <div class="row">
-                            <div class="spacer-large"></div>
-                            <div class="text-width-three">
-                                <h2 data-w-id="e5ee57c1-f5a9-3c32-aef7-415823850feb" class="align-centre-mobile caps">
-                                    <span style="opacity: 1" class="span-text one">Join the</span>
-                                    <span style="opacity: 1" class="span-text two">Fates program</span>
-                                </h2>
-                            </div>
-                        </div>
-                        <div class="row flex-right">
-                            <div class="text-width-braver">
-                                <p data-w-id="e5ee57c1-f5a9-3c32-aef7-415823851018" style="opacity: 1" class="indenet">
-                                    We need brave volunteers to venture out and settle new lands. It will be difficult
-                                    and dangerous, but, ultimately, our only chance. Resources, however, are seriously
-                                    limited and initially there will only be a small number of evacuation pods
-                                    available.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+
                 <div class="hero">
                     <div class="grad-btm">
                         <div class="text-width-four">
                             <div class="div-hide align-centre">
                                 <div data-w-id="97b2a9aa-2a80-459e-7bb2-50770db09e83" class="text-sm caps fade">
-                                    <span
-                                        style="
-                                            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="span-text one"
-                                        >D</span
-                                    ><span
-                                        style="
-                                            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="span-text two"
-                                        >E</span
-                                    ><span
-                                        style="
-                                            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="span-text three"
-                                        >S</span
-                                    ><span
-                                        style="
-                                            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="span-text four"
-                                        >T</span
-                                    ><span
-                                        style="
-                                            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="span-text five"
-                                        >I</span
-                                    ><span
-                                        style="
-                                            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="span-text six"
-                                        >N</span
-                                    ><span
-                                        style="
-                                            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="span-text seven"
-                                        >A</span
-                                    ><span
-                                        style="
-                                            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="span-text eight"
-                                        >T</span
-                                    ><span
-                                        style="
-                                            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="span-text nine"
-                                        >I</span
-                                    ><span
-                                        style="
-                                            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="span-text ten"
-                                        >O</span
-                                    ><span
-                                        style="
-                                            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="span-text eleven"
-                                        >N</span
-                                    ><span
-                                        style="
-                                            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="span-text twelve"
-                                        >:</span
-                                    >
-                                    <span
-                                        style="
-                                            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="span-text thirteen"
-                                        >A</span
-                                    ><span
-                                        style="
-                                            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="span-text fourteen"
-                                        >S</span
-                                    ><span
-                                        style="
-                                            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="span-text fithteen"
-                                        >T</span
-                                    ><span
-                                        style="
-                                            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="span-text sixteen"
-                                        >E</span
-                                    ><span
-                                        style="
-                                            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="span-text seventeen"
-                                        >R</span
-                                    ><span
-                                        style="
-                                            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="span-text eighteen"
-                                        >O</span
-                                    ><span
-                                        style="
-                                            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="span-text nineteen"
-                                        >I</span
-                                    ><span
-                                        style="
-                                            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="span-text twenty"
-                                        >D</span
-                                    ><span
-                                        style="
-                                            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="span-text twenty"
-                                        >S</span
-                                    >
+                                    TO INTRODUCE YOU
                                 </div>
                             </div>
                             <div class="spacer-small"></div>
                             <h2 data-w-id="97b2a9aa-2a80-459e-7bb2-50770db09e8f" class="caps align-centre">
-                                <span class="span-text one inline-m" style="opacity: 1"
-                                    >1.2 MILLION REAL ASTEROIDS</span
-                                >
-                                <span class="span-text two fade-text inline-m" style="opacity: 1"
-                                    >SET THE STAGE FOR OUR FUTURE AMONGST THE STARS</span
-                                >
+                                <span class="span-text one inline-m" style="opacity: 1">Initial DEX Offering</span>
                             </h2>
+                            <p>
+                                You can show your Web3 games here, and you can launch your beta games. Get the user
+                                experience of your work in advance. But in the final analysis, it is the user who
+                                decides whether your game can log in to Abyx.
+                            </p>
+                            <div class="inline">
+                                <a
+                                    rel="noopener"
+                                    data-w-id="b9431fe5-42db-d18f-f665-4bfc0b038db4"
+                                    href="#"
+                                    target="_blank"
+                                    class="btn-parent w-inline-block"
+                                >
+                                    <div class="div-hide">
+                                        <div
+                                            style="
+                                                transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                                                transform-style: preserve-3d;
+                                            "
+                                            class="button-txt"
+                                        >
+                                            Go to Initial DEX Offering Page>>
+                                        </div>
+                                        <div
+                                            style="
+                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                                                transform-style: preserve-3d;
+                                            "
+                                            class="button-txt-ap"
+                                        >
+                                            Go to Initial DEX Offering Page>>
+                                        </div>
+                                    </div>
+                                    <div style="width: 100%; height: 0%" class="bg-whipe"></div
+                                ></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="grad-top"><div class="border-line-mid"></div></div>
+                    <div class="grad-top">
+                        <div class="border-line-mid"></div>
+                        <div class="l">
+                            <h1>GameFi on the Origin</h1>
+                            <p>NUMBER OF GAMES ON ENG</p>
+                        </div>
+                        <div class="r">
+                            <h1>28 Games</h1>
+                            <h2>NUMBER OF GAMES ON ENG</h2>
+                            <p>
+                                There are currently 26 gameFi games operating on ORIGIN. While ensuring the best game
+                                for users, it also ensures the profits of the producers and publishers. Individual
+                                developers can also submit their own blockchain games through originworkshop.
+                            </p>
+                        </div>
+                    </div>
                     <div class="img-parent">
                         <div class="img-child">
                             <div style="opacity: 1" class="video-html5 w-embed">
@@ -1173,18 +930,8 @@
                     </div>
                 </div>
             </section>
-            <div class="spacer-large"></div>
-            <div class="spacer-large"></div>
+            <div class="spacer-medium"></div>
             <section class="section">
-                <div class="parent">
-                    <img
-                        src="./assets/631f46d6d0cf7ac95e0aa4cc_lines-lg.svg"
-                        loading="lazy"
-                        alt=""
-                        id="divisions"
-                        class="lines-large"
-                    />
-                </div>
                 <div data-w-id="ed1a0231-56e9-35d4-bb72-8378c1a3b6c8" class="parent div-hide">
                     <div
                         class="super-text no-wrap"
@@ -1195,274 +942,7 @@
                             transform-style: preserve-3d;
                         "
                     >
-                        The Divisions * The Divisions * The Divisions * The Divisions * The Divisions *
-                    </div>
-                </div>
-                <div class="container-lg">
-                    <div class="border-line-top"></div>
-                    <div class="w-layout-grid _2-col-grid">
-                        <div id="w-node-ff1b07de-c0dd-acc5-f904-ba7e01f7acfb-d1ac47f4" class="parent">
-                            <div class="img-parent divisions">
-                                <div class="slide-text">
-                                    <div class="slide-text-wrap">
-                                        <div class="caps"><strong>HIVE:</strong> community + diplomacy</div>
-                                        <div class="caps"><strong>FORGE:</strong> Technology + engineering</div>
-                                        <div class="caps"><strong>SCOUT:</strong> Survey + Exploration</div>
-                                        <div class="caps"><strong>OATH:</strong> Operations + Logistics</div>
-                                        <div class="caps"><strong>LABS:</strong> Science + Research</div>
-                                    </div>
-                                </div>
-                                <div
-                                    data-w-id="9d989509-aaf5-a811-0b24-dfb680d12a57"
-                                    style="
-                                        transform: translate3d(0%, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
-                                            rotateZ(0deg) skew(0deg, 0deg);
-                                        transform-style: preserve-3d;
-                                    "
-                                    class="bg-whipe fade-over"
-                                ></div>
-                                <div class="img-wrap top">
-                                    <div
-                                        data-bg="https://assets-global.website-files.com/631f46d6d0cf7a86de0aa4c3/6399edd7a912d4baaba37d68_01-a.png"
-                                        class="img-child img-lazy lazyloaded"
-                                        style="
-                                            background-image: url('https://assets-global.website-files.com/631f46d6d0cf7a86de0aa4c3/6399edd7a912d4baaba37d68_01-a.png');
-                                        "
-                                    ></div>
-                                    <div
-                                        data-bg="https://assets-global.website-files.com/631f46d6d0cf7a86de0aa4c3/6399edd8ef7067114e87c070_02-a.png"
-                                        class="img-child img-lazy lazyloaded"
-                                        style="
-                                            background-image: url('https://assets-global.website-files.com/631f46d6d0cf7a86de0aa4c3/6399edd8ef7067114e87c070_02-a.png');
-                                        "
-                                    ></div>
-                                    <div
-                                        data-bg="https://assets-global.website-files.com/631f46d6d0cf7a86de0aa4c3/6399edd7d4b483769a56cd1a_04-a.png"
-                                        class="img-child img-lazy lazyloaded"
-                                        style="
-                                            background-image: url('https://assets-global.website-files.com/631f46d6d0cf7a86de0aa4c3/6399edd7d4b483769a56cd1a_04-a.png');
-                                        "
-                                    ></div>
-                                    <div
-                                        data-bg="https://assets-global.website-files.com/631f46d6d0cf7a86de0aa4c3/6399edd707b58e23e6b5361f_05-a.png"
-                                        class="img-child img-lazy lazyload"
-                                    ></div>
-                                    <div
-                                        data-bg="https://assets-global.website-files.com/631f46d6d0cf7a86de0aa4c3/6399edd88fdfc3cd1839de58_03-a.png"
-                                        class="img-child img-lazy lazyload"
-                                    ></div>
-                                </div>
-                                <div class="img-wrap bottom">
-                                    <div
-                                        data-bg="https://assets-global.website-files.com/631f46d6d0cf7a86de0aa4c3/6399bda0e4e41b7ed92864a9_bg-01.jpg"
-                                        class="img-child img-lazy lazyloaded"
-                                        style="
-                                            background-image: url('https://assets-global.website-files.com/631f46d6d0cf7a86de0aa4c3/6399bda0e4e41b7ed92864a9_bg-01.jpg');
-                                        "
-                                    ></div>
-                                    <div
-                                        data-bg="https://assets-global.website-files.com/631f46d6d0cf7a86de0aa4c3/6399bda07f63ad3b49dfe457_bg-02.jpg"
-                                        class="img-child img-lazy lazyloaded"
-                                        style="
-                                            background-image: url('https://assets-global.website-files.com/631f46d6d0cf7a86de0aa4c3/6399bda07f63ad3b49dfe457_bg-02.jpg');
-                                        "
-                                    ></div>
-                                    <div
-                                        data-bg="https://assets-global.website-files.com/631f46d6d0cf7a86de0aa4c3/6399bda0e66c5438d35fddd5_bg-04.jpg"
-                                        class="img-child img-lazy lazyloaded"
-                                        style="
-                                            background-image: url('https://assets-global.website-files.com/631f46d6d0cf7a86de0aa4c3/6399bda0e66c5438d35fddd5_bg-04.jpg');
-                                        "
-                                    ></div>
-                                    <div
-                                        data-bg="https://assets-global.website-files.com/631f46d6d0cf7a86de0aa4c3/6399bda0ea78b044866a3ca5_bg-05.jpg"
-                                        class="img-child img-lazy lazyload"
-                                    ></div>
-                                    <div
-                                        data-bg="https://assets-global.website-files.com/631f46d6d0cf7a86de0aa4c3/63986343718e9522170f96b5_bg-03.png"
-                                        class="img-child img-lazy lazyload"
-                                    ></div>
-                                </div>
-                            </div>
-                            <div data-w-id="a0bcc058-107d-507b-7072-020550bb4bd1">
-                                <div class="img-child hive-back"></div>
-                                <div class="w-layout-grid button-grid">
-                                    <div
-                                        id="w-node-e04cc551-fed0-9386-f95e-7a738c64e760-d1ac47f4"
-                                        data-w-id="e04cc551-fed0-9386-f95e-7a738c64e760"
-                                        style="
-                                            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            opacity: 1;
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="parent button-gird one"
-                                    >
-                                        <img
-                                            src="./assets/631f46d6d0cf7a72c70aa501_Hive - Logo.svg"
-                                            loading="lazy"
-                                            id="w-node-_550d3d23-900e-ebb1-d631-ed146dfe76e1-d1ac47f4"
-                                            alt="Hive Icon"
-                                            class="divisions-icon"
-                                        />
-                                        <div style="width: 1px; height: 100%" class="border-line-right"></div>
-                                        <div class="border-line-bottom"></div>
-                                        <div class="xsm-text">HIVE</div>
-                                        <div style="width: 100%; height: 0%" class="bg-whipe"></div>
-                                    </div>
-                                    <div
-                                        id="w-node-_1c0748af-c4d3-8e47-2e02-57f0d077c736-d1ac47f4"
-                                        data-w-id="1c0748af-c4d3-8e47-2e02-57f0d077c736"
-                                        style="
-                                            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            opacity: 1;
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="parent button-gird two"
-                                    >
-                                        <div style="width: 1px; height: 100%" class="border-line-right"></div>
-                                        <div class="border-line-bottom"></div>
-                                        <div class="xsm-text">FORGE</div>
-                                        <img
-                                            src="./assets/631f46d6d0cf7a2cdc0aa4fe_Forge - Logo.svg"
-                                            loading="lazy"
-                                            alt="Forge Icon"
-                                            class="divisions-icon"
-                                        />
-                                        <div style="width: 100%; height: 0%" class="bg-whipe"></div>
-                                    </div>
-                                    <div
-                                        id="w-node-_078dd1af-9897-c793-fc08-c2f830ccd5c7-d1ac47f4"
-                                        data-w-id="078dd1af-9897-c793-fc08-c2f830ccd5c7"
-                                        style="
-                                            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            opacity: 1;
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="parent button-gird three"
-                                    >
-                                        <div style="width: 1px; height: 100%" class="border-line-right"></div>
-                                        <div class="border-line-bottom"></div>
-                                        <div class="xsm-text">SCOUT</div>
-                                        <img
-                                            src="./assets/631f46d6d0cf7aa7570aa4f0_Scout - Logo.svg"
-                                            loading="lazy"
-                                            alt="Scout Icon"
-                                            class="divisions-icon"
-                                        />
-                                        <div style="width: 100%; height: 0%" class="bg-whipe"></div>
-                                    </div>
-                                    <div
-                                        id="w-node-_74134ebd-3f03-5971-97c9-e03714dfba94-d1ac47f4"
-                                        data-w-id="74134ebd-3f03-5971-97c9-e03714dfba94"
-                                        style="
-                                            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            opacity: 1;
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="parent button-gird four"
-                                    >
-                                        <div style="width: 1px; height: 100%" class="border-line-right"></div>
-                                        <div class="border-line-bottom"></div>
-                                        <div class="xsm-text">OATH</div>
-                                        <img
-                                            src="./assets/631f46d6d0cf7a4fc90aa4f3_Oath - Logo.svg"
-                                            loading="lazy"
-                                            alt="Oath Icon"
-                                            class="divisions-icon"
-                                        />
-                                        <div style="width: 100%; height: 0%" class="bg-whipe"></div>
-                                    </div>
-                                    <div
-                                        id="w-node-_2d0b832b-b417-0ae7-668b-a193d40982d8-d1ac47f4"
-                                        data-w-id="2d0b832b-b417-0ae7-668b-a193d40982d8"
-                                        style="
-                                            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            opacity: 1;
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="parent button-gird five"
-                                    >
-                                        <div style="width: 1px; height: 100%" class="border-line-right"></div>
-                                        <div class="xsm-text">LABS</div>
-                                        <img
-                                            src="./assets/631f46d6d0cf7aad020aa4f5_Labs - Logo.svg"
-                                            loading="lazy"
-                                            alt="Labs Icon"
-                                            class="divisions-icon"
-                                        />
-                                        <div style="width: 100%; height: 0%" class="bg-whipe"></div>
-                                    </div>
-                                    <div
-                                        id="w-node-_5c827803-f8c6-5e04-37b1-6729c9bba21d-d1ac47f4"
-                                        style="
-                                            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                            opacity: 1;
-                                            transform-style: preserve-3d;
-                                        "
-                                        class="parent button-gird six"
-                                    >
-                                        <div style="width: 1px; height: 100%" class="border-line-right"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="w-node-_9c2e4fa2-cf67-89e6-507e-08c24841d7fc-d1ac47f4" class="parent division">
-                            <h2 data-w-id="453a36f7-ae6f-7b4b-11e1-7af88149a763" style="opacity: 1" class="sans">
-                                ASH: The Assembly for the Survival of Humanity
-                            </h2>
-                            <div class="spacer-large"></div>
-                            <div class="text-width-two">
-                                <p data-w-id="0eeb3001-568c-207d-c5c3-7e66df4df303" class="indenet">
-                                    As you start your new life as part of the Assembly, you will be assigned divisions
-                                    that reflect your role and aptitude. The FATES Program has five divisions, each in
-                                    possession of unique values deemed vital for humanity.
-                                </p>
-                                <div class="spacer-medium"></div>
-                                <div class="inline">
-                                    <a
-                                        rel="noopener"
-                                        data-w-id="5a58f235-be36-ae2a-6116-ed130fb99de3"
-                                        href="https://www.fates.world/divisions"
-                                        target="_blank"
-                                        class="btn-parent w-inline-block"
-                                        ><img
-                                            src="./assets/63986b80ae55183b0bffc5ab_icon-fates.svg"
-                                            loading="lazy"
-                                            alt=""
-                                            class="btn-icon" />
-                                        <div class="div-hide">
-                                            <div
-                                                style="
-                                                    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                    transform-style: preserve-3d;
-                                                "
-                                                class="button-txt"
-                                            >
-                                                FIND YOUR DIVISION
-                                            </div>
-                                            <div
-                                                style="
-                                                    transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1)
-                                                        rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                    transform-style: preserve-3d;
-                                                "
-                                                class="button-txt-ap"
-                                            >
-                                                FIND YOUR DIVISION
-                                            </div>
-                                        </div>
-                                        <div style="width: 100%; height: 0%" class="bg-whipe"></div
-                                    ></a>
-                                </div>
-                            </div>
-                        </div>
+                        ORIGIN PROGRAM * ORIGIN PROGRAM * ORIGIN PROGRAM * ORIGIN PROGRAM * ORIGIN PROGRAM *
                     </div>
                 </div>
                 <div class="parent">
@@ -1470,8 +950,120 @@
                         src="./assets/631f46d6d0cf7ac95e0aa4cc_lines-lg.svg"
                         loading="lazy"
                         alt=""
-                        class="lines-large pull"
+                        id="divisions"
+                        class="lines-large"
                     />
+                </div>
+                <div class="container-lg">
+                    <div class="members" id="members"></div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper" id="mySwiper">
+                            <div class="swiper-slide">
+                                <div class="avatar">
+                                    <img src="./assets/images/avatar.png" alt="" />
+                                </div>
+                                <div class="intro">
+                                    <div class="name">Alex Wang</div>
+                                    <div class="name"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                            <div class="swiper-slide">Slide 4</div>
+                            <div class="swiper-slide">Slide 5</div>
+                            <div class="swiper-slide">Slide 6</div>
+                            <div class="swiper-slide">Slide 7</div>
+                            <div class="swiper-slide">Slide 8</div>
+                            <div class="swiper-slide">Slide 9</div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <script>
+                        const members = [
+                            {
+                                id: 1,
+                                name: 'Alex Wang',
+                                position: 'CEO',
+                                desc: 'Nearly 22000 users have benefited from the Origin platform, while also providing developers with 22000 project benefits. On Origin, 22000 users have been playing games released by Origin for 30 consecutive days.Nearly 22000 users have benefited from the Origin platform, while also providing developers with 22000 project benefits. On Origin, 22000 users have been playing games released by Origin for 30 consecutive days.Nearly 22000 users have benefited from the Origin platform, while also providing Nearly 22000 users have benefited from the Origin platform, while also providing developers with 22000 project benefits. On Origin, 22000 users have been playing games released by Origin for 30 consecutive days.Nearly 22000 users have benefited from the Origin platform,',
+                                avatar: './assets/images/avatar.png'
+                            },
+                            {
+                                id: 2,
+                                name: 'Vietnam',
+                                position: 'FOUNDER',
+                                desc: 'Nearly 22000 users have benefited from the Origin platform, while also providing developers with 22000 project benefits. On Origin, 22000 ',
+                                avatar: './assets/images/avatar.png'
+                            },
+                            {
+                                id: 3,
+                                name: 'Esse Slim',
+                                position: 'COO',
+                                desc: 'Nearly 22000 users have benefited from the Origin platform, while also providing developers with 22000 project benefits. On Origin, 22000 ',
+                                avatar: './assets/images/avatar.png'
+                            },
+                            {
+                                id: 3,
+                                name: 'Esse Slim',
+                                position: 'COO',
+                                desc: 'Nearly 22000 users have benefited from the Origin platform, while also providing developers with 22000 project benefits. On Origin, 22000 ',
+                                avatar: './assets/images/avatar.png'
+                            },
+                            {
+                                id: 4,
+                                name: 'Esse Slim',
+                                position: 'COO',
+                                desc: 'Nearly 22000 users have benefited from the Origin platform, while also providing developers with 22000 project benefits. On Origin, 22000 ',
+                                avatar: './assets/images/avatar.png'
+                            },
+                            {
+                                id: 5,
+                                name: 'Esse Slim',
+                                position: 'COO',
+                                desc: 'Nearly 22000 users have benefited from the Origin platform, while also providing developers with 22000 project benefits. On Origin, 22000 ',
+                                avatar: './assets/images/avatar.png'
+                            },
+                            {
+                                id: 6,
+                                name: 'Esse Slim',
+                                position: 'COO',
+                                desc: 'Nearly 22000 users have benefited from the Origin platform, while also providing developers with 22000 project benefits. On Origin, 22000 ',
+                                avatar: './assets/images/avatar.png'
+                            },
+                            {
+                                id: 7,
+                                name: 'Esse Slim',
+                                position: 'COO',
+                                desc: 'Nearly 22000 users have benefited from the Origin platform, while also providing developers with 22000 project benefits. On Origin, 22000 ',
+                                avatar: './assets/images/avatar.png'
+                            }
+                        ];
+                        let swiperContent = '';
+                        let navContent = '';
+                        members.forEach(element => {
+                            swiperContent += `<div class="swiper-slide"><div class="avatar" data-id="${element.id}">
+                                    <img src="${element.avatar}" alt="" />
+                                </div>
+                                <div class="intro">
+                                    <div class="name">${element.name}</div>
+                                    <div class="position">${element.position}</div>
+                                    <div class="desc">${element.desc}</div>
+                                </div></div>`;
+                            navContent += `<div class="member">
+                                <div class="name">${element.name}</div>
+                                <div class="position">${element.position}</div>
+                            </div>`;
+                        });
+                        $('#members').html(navContent);
+                        $('#mySwiper').html(swiperContent);
+
+                        var swiper = new Swiper('.mySwiper', {
+                            navigation: {
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev'
+                            }
+                        });
+                    </script>
                 </div>
                 <div
                     data-w-id="f691e5e1-6824-3457-e905-5d182b241f33"
@@ -1972,128 +1564,13 @@
                                 class="text-width-one sm"
                                 style="will-change: opacity; opacity: 1"
                             >
-                                <div class="div-hide align-centre">
-                                    <div
-                                        data-w-id="4156d06b-6ee3-0e61-1044-5259aa21cc7b"
-                                        class="text-sm caps fade hide"
-                                    >
-                                        <span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text one"
-                                            >T</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text two"
-                                            >h</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text three"
-                                            >e</span
-                                        >
-                                        <span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text four"
-                                            >S</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text five"
-                                            >t</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text six"
-                                            >o</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text seven"
-                                            >r</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text eight"
-                                            >y</span
-                                        >
-                                        <span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text nine"
-                                            >s</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text ten"
-                                            >o</span
-                                        >
-                                        <span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text eleven"
-                                            >F</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text twelve"
-                                            >a</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text thirteen"
-                                            >r</span
-                                        >
-                                    </div>
-                                </div>
-                                <div class="spacer-small"></div>
                                 <h2
                                     data-w-id="4156d06b-6ee3-0e61-1044-5259aa21cc93"
                                     class="caps align-centre heading-lg"
                                 >
-                                    <span style="opacity: 1" class="span-text one">The Story so Far</span>
+                                    <span style="opacity: 1" class="span-text one">ROADMAP</span>
                                 </h2>
+                                <p>ORIGIN GameFi Protocol Provider.</p>
                             </div>
                             <div id="w-node-_4cbe64f9-9e07-1a8a-2a1b-281191d72cee-d1ac47f4" class="parent story">
                                 <div
@@ -2127,129 +1604,7 @@
                                 </div>
                                 <div class="div-hide ab-left">
                                     <div data-w-id="75dd7d8f-e0c1-b27f-2c14-43fa2bfe36d5" class="text-sm caps fade">
-                                        <span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text one"
-                                            >T</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text two"
-                                            >H</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text three"
-                                            >E</span
-                                        >
-                                        <span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text four"
-                                            >E</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text five"
-                                            >X</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text six"
-                                            >P</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text seven"
-                                            >A</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text eight"
-                                            >N</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text nine"
-                                            >S</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text ten"
-                                            >I</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text eleven"
-                                            >O</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text twelve"
-                                            >N</span
-                                        >
-                                        <span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text thirteen"
-                                            >A</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text fourteen"
-                                            >g</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text fithteen"
-                                            >e</span
-                                        >
+                                        2023 Q3
                                     </div>
                                 </div>
                             </div>
@@ -2285,137 +1640,7 @@
                                 </div>
                                 <div class="div-hide ab-right">
                                     <div data-w-id="60624943-0e61-e985-949e-703df09fc10d" class="text-sm caps fade">
-                                        <span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text one"
-                                            >T</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text two"
-                                            >H</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text three"
-                                            >E</span
-                                        >
-                                        <span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text four"
-                                            >B</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text five"
-                                            >R</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text six"
-                                            >A</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text seven"
-                                            >I</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text eight"
-                                            >D</span
-                                        >
-                                        <span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text nine"
-                                            >I</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text ten"
-                                            >N</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text eleven"
-                                            >C</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text twelve"
-                                            >I</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text thirteen"
-                                            >D</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text fourteen"
-                                            >E</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text fithteen"
-                                            >N</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text sixteen"
-                                            >T</span
-                                        >
+                                        2024 Q4
                                     </div>
                                 </div>
                             </div>
@@ -2450,145 +1675,7 @@
                                 </div>
                                 <div class="div-hide ab-left">
                                     <div data-w-id="fc88efc9-425a-b448-645b-0eae0ea911cd" class="text-sm caps fade">
-                                        <span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text one"
-                                            >A</span
-                                        >
-                                        <span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text two"
-                                            >W</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text three"
-                                            >O</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text four"
-                                            >R</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text five"
-                                            >L</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text six"
-                                            >D</span
-                                        >
-                                        <span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text seven"
-                                            >U</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text eight"
-                                            >N</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text nine"
-                                            >T</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text ten"
-                                            >H</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text eleven"
-                                            >R</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text twelve"
-                                            >E</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text thirteen"
-                                            >A</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text fourteen"
-                                            >D</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text fithteen"
-                                            >I</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text sixteen"
-                                            >N</span
-                                        ><span
-                                            style="
-                                                transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg)
-                                                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                                                transform-style: preserve-3d;
-                                            "
-                                            class="span-text seventeen"
-                                            >G</span
-                                        >
+                                        2025 Q5
                                     </div>
                                 </div>
                             </div>
@@ -3017,7 +2104,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="row flex">
+                        <div class="flex row">
                             <div style="width: 1px; height: 100%" class="border-line-right">
                                 <div
                                     class="pulse-line-one"
@@ -3080,7 +2167,7 @@
                 </div>
                 <div class="img-parent"><div class="img-child img-eight"></div></div>
                 <div id="evacuate" class="grid-parent">
-                    <div class="row flex"><div style="width: 1px; height: 100%" class="border-line-right"></div></div>
+                    <div class="flex row"><div style="width: 1px; height: 100%" class="border-line-right"></div></div>
                     <div class="row"></div>
                     <div class="row"><div style="width: 1px; height: 100%" class="border-line-right"></div></div>
                     <div class="row"></div>
@@ -3095,12 +2182,7 @@
                         class="lines-large"
                     />
                 </div>
-                <img
-                    src="./assets/631f46d6d0cf7a8a3c0aa51b_Fates-logo-footer.svg"
-                    loading="lazy"
-                    alt="Fates Logo"
-                    class="logo-footer"
-                />
+                <img src="./assets/images/logo.png" loading="lazy" alt="Fates Logo" class="logo-footer" width="200px" />
                 <div class="footer-links">
                     <div class="footer-parent">
                         <a rel="noopener" href="https://www.fates.world/divisions" target="_blank" class="f-link"
@@ -3130,8 +2212,8 @@
         ></script>
         <script type="module">
             import { initEarth, animate, upEarth, starForge, initSolar, onWindowResize } from './assets/js/3d.js';
-            initEarth();
-            starForge();
+            // initEarth();
+            // starForge();
             // initSolar();
             animate();
             window.addEventListener('resize', onWindowResize);

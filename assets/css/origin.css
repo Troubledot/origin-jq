@@ -1,9 +1,22 @@
+@font-face {
+  font-family: 'Product';
+  src: url(../font/Product-Sans-Regular.ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Audiowide';
+  src: url(../font/Audiowide.ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
 .wrapper {
-  overflow: overlay;
+  font-family: 'Product';
 }
 .wrapper #start {
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 .wrapper #start .bg {
   background-color: #000000;
@@ -99,6 +112,172 @@
 }
 .wrapper #start .title .ani-dot:before {
   opacity: 1;
+}
+.wrapper .head-section .hero {
+  position: absolute;
+}
+.wrapper .head-section h2 {
+  font-weight: 700;
+  font-size: 62px;
+  letter-spacing: 20px;
+  color: #fff;
+}
+.wrapper .head-section p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 7px;
+  margin: 20px 0;
+}
+.wrapper .head-section .inline {
+  margin-top: 40px;
+}
+.wrapper .head-section.height.hope .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.wrapper .parent.card.best {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.wrapper .parent.card.best .best-game {
+  width: 100%;
+  padding: 60px 40px;
+}
+.wrapper .parent.card.best .best-logo {
+  width: 150px;
+}
+.wrapper .parent.card.best .btn-parent {
+  background-color: #4b90f2;
+}
+.wrapper .grad-top {
+  display: flex;
+  padding: 40px;
+  justify-content: space-between;
+}
+.wrapper .grad-top h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+.wrapper .grad-top h2 {
+  font-size: 14px;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #50a5fb, #4029f0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+}
+.wrapper .grad-top p {
+  font-size: 14px;
+  color: #404040;
+}
+.wrapper .grad-top .border-line-mid {
+  left: 50%;
+  top: 10px;
+  margin-left: -0.5px;
+}
+.wrapper .grad-top .l,
+.wrapper .grad-top .r {
+  width: 500px;
+}
+.wrapper .grad-top .r {
+  text-align: right;
+}
+.wrapper .text-width-four {
+  text-align: center;
+  width: 70%;
+}
+.wrapper .text-width-four p {
+  margin: 40px 0;
+}
+.wrapper .text-width-four .btn-parent {
+  background-color: #4b90f2;
+}
+.wrapper .dot-parent {
+  padding-top: 12%;
+}
+.wrapper .text-width-one.sm {
+  margin-top: 0;
+  width: 100%;
+  text-align: center;
+}
+.wrapper .text-width-one.sm h2 {
+  font-size: 62px;
+  letter-spacing: 12px;
+}
+.wrapper .text-width-one.sm p {
+  font-size: 14px;
+  margin-top: 20px;
+  letter-spacing: 5px;
+}
+.wrapper .text-sm.caps.fade {
+  color: #fff;
+  opacity: 1;
+  font-size: 14px;
+  font-style: oblique;
+}
+.wrapper .super-text {
+  font-family: 'Audiowide';
+  cursor: pointer;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 0.01em;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-repeat: no-repeat;
+  -webkit-transition: background-size 0.5s cubic-bezier(0.67, 0.01, 0.15, 0.98);
+  transition: background-size 0.5s cubic-bezier(0.67, 0.01, 0.15, 0.98);
+}
+.wrapper .swiper {
+  width: 1000px;
+  height: 340px;
+  background: url(../images/slideBg.png);
+  background-size: 100% 100%;
+}
+.wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  padding: 30px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+}
+.wrapper .swiper-slide .intro {
+  text-align: left;
+}
+.wrapper .swiper-slide .intro .name {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.wrapper .swiper-slide .intro .position {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 30px;
+}
+.wrapper .swiper-slide .intro .desc {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.5;
+  padding-right: 40px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.wrapper .swiper-slide .avatar {
+  width: 310px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+.wrapper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 @keyframes dotRotate1 {
   0% {

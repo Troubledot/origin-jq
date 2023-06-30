@@ -32,7 +32,7 @@ new ScrollMagic.Scene({
     .on('end', e => {
         console.log('end');
         console.log(e);
-        initSolar();
+        // initSolar();
     })
     .addTo(controller);
 new ScrollMagic.Scene({
