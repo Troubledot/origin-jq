@@ -1,3 +1,6 @@
+.wrapper {
+  overflow: overlay;
+}
 .wrapper #start {
   height: 100vh;
   width: 100vw;
@@ -9,13 +12,18 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 5;
 }
 .wrapper #start .top-content {
   width: 100%;
   height: 100%;
-  position: relative;
-  z-index: 10;
+  position: absolute;
+  z-index: 6;
+  opacity: 1;
+}
+.wrapper #start .top-content#canvas2 {
+  z-index: 4;
+  opacity: 0;
 }
 .wrapper #start .title {
   width: 1200px;
