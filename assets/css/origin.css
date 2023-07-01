@@ -24,6 +24,23 @@
   right: 20px;
   top: 20px;
   z-index: 9999;
+  display: flex;
+}
+.wrapper .wallet .copy {
+  position: absolute;
+  right: 10px;
+  display: none;
+  background: url(../images/copy.svg);
+  width: 15px;
+  height: 15px;
+  z-index: 199;
+  background-size: 100% 100%;
+}
+.wrapper .wallet span {
+  margin-right: 3px;
+}
+.wrapper .wallet .button-txt-ap {
+  align-items: center;
 }
 .wrapper .wallet.btn-parent {
   background-color: #4b90f2;
