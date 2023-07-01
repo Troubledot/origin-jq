@@ -16,10 +16,8 @@ const width = canvas.clientWidth;
 const height = canvas.clientHeight;
 const k = width / height;
 const scene = new THREE.Scene();
-let camera1 = new THREE.PerspectiveCamera(75, k, 0.1, 1000);
-const s = 310;
-const camera2 = new THREE.OrthographicCamera(-s * k, s * k, s, -s, 1, 1500);
-camera = camera1;
+camera = new THREE.PerspectiveCamera(75, k, 1, 5000);
+// camera.position.set(0, 320, 600);
 const renderer = new THREE.WebGLRenderer({
     antialias: true
 });
@@ -40,7 +38,7 @@ const initLight = () => {
 };
 
 export const onWindowResize = () => {
-    camera.aspect = canvas.clientWidth / canvas.clientHeight;
+    camera.aspect = width / height;
     camera.updateProjectionMatrix();
     renderer.setSize(width, height);
     renderer.render(scene, camera);
@@ -147,7 +145,7 @@ const createRingPlanetMesh = (sphere_R, sphere_URL, ring_r, ring_R, ring_URL) =>
 // 轨道
 const circle = r => {
     const arc = new THREE.ArcCurve(0, 0, r, 0, 2 * Math.PI, true);
-    const points = arc.getPoints(5000);
+    const points = arc.getPoints(50000);
     const geometry = new THREE.BufferGeometry();
     geometry.setFromPoints(points);
     const material = new THREE.LineBasicMaterial({
@@ -175,7 +173,8 @@ function getAllMaterials(group) {
     return materials;
 }
 export const initSolar = () => {
-    camera = camera2;
+    // camera.position.set(0, 320, 600);
+    //  camera.position = new THREE.Vector3(100, 350, 500);
     // new OrbitControls(camera, renderer.domElement);
     const Data = getSolarData();
     solarGroup = new THREE.Group();
@@ -184,7 +183,6 @@ export const initSolar = () => {
     solarGroup.add(sun);
     planetGroup = new THREE.Group();
     solarGroup.add(planetGroup);
-
     Data.planet.forEach(function (obj) {
         let planet = null;
         if (obj.ring) {
@@ -199,25 +197,43 @@ export const initSolar = () => {
         const line = circle(obj.revolutionR);
         solarGroup.add(line);
     });
-    materials = getAllMaterials(solarGroup);
-    materials.forEach(mat => {
-        mat.transparent = true;
-        mat.opacity = 0;
-    });
-    solarGroup.position.set(0, -20, 0);
+    hideSolar();
+    solarGroup.position.set(0, 200, 0);
+    solarGroup.rotation.x = 0.2;
     scene.add(solarGroup);
-    camera.position.set(-962.64, 125.84, 149.13);
-    camera.lookAt(scene.position);
+    window.solarGroup = solarGroup;
+    window.camera = camera;
+};
+
+export const showSolar = () => {
+    if (solarGroup && earthGroup) {
+        camera.position.set(0, 200, 600);
+        solarGroup.visible = true;
+        earthGroup.visible = false;
+    }
+};
+export const hideSolar = () => {
+    if (solarGroup) {
+        materials = getAllMaterials(solarGroup);
+        materials.forEach(mat => {
+            mat.transparent = true;
+            mat.opacity = 0;
+        });
+        solarGroup.visible = false;
+    }
+};
+export const showEarth = () => {
+    if (solarGroup && earthGroup) {
+        earthGroup.visible = true;
+        solarGroup.visible = false;
+        camera.position.set(0, 0, 5);
+    }
 };
 
 export const toggleSolar = opacity => {
     materials.forEach(mat => {
         mat.opacity = opacity;
     });
-};
-export const clearSolar = () => {
-    scene.remove(solarGroup);
-    camera = camera1;
 };
 
 export const starForge = () => {
@@ -250,7 +266,7 @@ export const starForge = () => {
 };
 
 export const initEarth = () => {
-    camera.position.z = 5;
+    camera.position.set(0, 0, 5);
     initLight();
     earthGroup = new THREE.Group();
     const gem = new THREE.SphereGeometry(15, 500, 500);
@@ -283,10 +299,6 @@ export const initEarth = () => {
     earthGroup.add(sprit);
     earthGroup.position.set(0, -17.5, 0);
     scene.add(earthGroup);
-    const axesHelper = new THREE.AxesHelper(5);
-    scene.add(axesHelper);
-    window.earth = earth;
-    window.earthGroup = earthGroup;
 };
 
 export const upEarth = (y, z) => {
@@ -295,12 +307,18 @@ export const upEarth = (y, z) => {
     }
 };
 
-export const outEarth = opacity => {
-    if (earthGroup) {
-        new TWEEN.Tween([earth.material, cloud.material, sprit.material]).to({ opacity }, 100).start();
+export const enterSolar = (x, scale) => {
+    if (solarGroup) {
+        // new TWEEN.Tween(solarGroup.rotation)
+        //     .to({ x, y: 0, z: 0 }, 100)
+        //     .easing(TWEEN.Easing.Quadratic.Out) // 设置缓动函数
+        //     .start();
+        new TWEEN.Tween(solarGroup.scale)
+            .to({ x: scale, y: scale, z: scale }, 100)
+            .easing(TWEEN.Easing.Quadratic.Out) // 设置缓动函数
+            .start();
     }
 };
-
 export const animate = () => {
     const delta = clock.getDelta();
     if (cloud) {
@@ -321,6 +339,6 @@ export const animate = () => {
         });
     }
     TWEEN.update();
-    requestAnimationFrame(animate);
     renderer.render(scene, camera);
+    requestAnimationFrame(animate);
 };

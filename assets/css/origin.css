@@ -10,13 +10,31 @@
   font-weight: 500;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Condensed';
+  src: url(../font/DIN-Condensed.ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
 .wrapper {
   font-family: 'Product';
+}
+.wrapper .wallet {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 9999;
+}
+.wrapper .wallet.btn-parent {
+  background-color: #4b90f2;
 }
 .wrapper #start {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+}
+.wrapper #start .first {
+  opacity: 0;
 }
 .wrapper #start .bg {
   background-color: #000000;
@@ -44,7 +62,22 @@
   left: 50%;
   top: 30%;
   transform: translateX(-50%);
+  text-align: center;
   z-index: 11;
+}
+.wrapper #start .title.build {
+  opacity: 0;
+  top: 35%;
+}
+.wrapper #start .title.build h2 {
+  margin-bottom: 20px;
+  font-size: 45px;
+}
+.wrapper #start .title.build p {
+  background-image: linear-gradient(to right, #50a5fb, #4029f0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .wrapper #start .title h1 {
   color: #fff;
@@ -116,13 +149,13 @@
 .wrapper .head-section .hero {
   position: absolute;
 }
-.wrapper .head-section h2 {
+.wrapper .head-section .text-width-one h2 {
   font-weight: 700;
   font-size: 62px;
   letter-spacing: 20px;
   color: #fff;
 }
-.wrapper .head-section p {
+.wrapper .head-section .text-width-one p {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.5);
   letter-spacing: 7px;
@@ -131,17 +164,44 @@
 .wrapper .head-section .inline {
   margin-top: 40px;
 }
-.wrapper .head-section.height.hope .container {
-  width: 1200px;
-  margin: 0 auto;
-}
 .wrapper .parent.card.best {
   flex-direction: column;
   justify-content: flex-start;
 }
 .wrapper .parent.card.best .best-game {
   width: 100%;
-  padding: 60px 40px;
+  padding: 60px 34px;
+}
+.wrapper .parent.card.best .best-game .title {
+  font-size: 48px;
+  line-height: 2;
+  font-style: italic;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+.wrapper .parent.card.best .best-game .aya {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.wrapper .parent.card.best .best-game .aya .item {
+  width: 33.3%;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+.wrapper .parent.card.best .best-game .label {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+.wrapper .parent.card.best .best-game .val {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 30px;
 }
 .wrapper .parent.card.best .best-logo {
   width: 150px;
@@ -187,6 +247,29 @@
   text-align: center;
   width: 70%;
 }
+.wrapper .text-width-four .fade {
+  letter-spacing: 5px;
+  background-image: linear-gradient(to right, #50a5fb, #4029f0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.wrapper .text-width-four h2 {
+  text-transform: none;
+  position: relative;
+  margin: 60px 0;
+}
+.wrapper .text-width-four h2::after {
+  content: '';
+  background: url(../images/titlebg.png);
+  background-size: 100% 100%;
+  width: 280px;
+  height: 73px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 .wrapper .text-width-four p {
   margin: 40px 0;
 }
@@ -195,6 +278,98 @@
 }
 .wrapper .dot-parent {
   padding-top: 12%;
+}
+.wrapper .head-section .container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.wrapper .head-section.hope {
+  text-align: center;
+}
+.wrapper .head-section.hope .hope-sub,
+.wrapper .head-section.hope p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.wrapper .head-section.hope h1 {
+  font-size: 22px;
+  line-height: 1.4;
+  text-transform: none;
+  width: 800px;
+  margin: 0 auto;
+}
+.wrapper .head-section.hope .contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.wrapper .head-section.hope .contacts .inline {
+  margin: 0 10px;
+}
+.wrapper .head-section.hope .dev {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .head-section.hope .dev .item {
+  background: url(../images/itembg.png);
+  width: 268px;
+  height: 343px;
+  background-size: 100% 100%;
+  padding: 30px;
+  text-align: left;
+}
+.wrapper .head-section.hope .dev .item .num {
+  color: #2a92f9;
+  font-size: 30px;
+  font-family: 'Condensed';
+}
+.wrapper .head-section.hope .dev .item img {
+  margin: 20px 0;
+}
+.wrapper .head-section.hope .dev .item .title {
+  font-size: 28px;
+  margin: 20px 0;
+}
+.wrapper .head-section.hope .dev .item p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.wrapper .head-section.hope .bot {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.wrapper .head-section.hope .bot .amount {
+  text-align: left;
+}
+.wrapper .head-section.hope .bot .amount .val {
+  font-size: 34px;
+  margin-bottom: 10;
+}
+.wrapper .head-section.hope .bot .amount .label {
+  font-size: 14px;
+  line-height: 3;
+  background-image: linear-gradient(to right, #50a5fb, #4029f0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.wrapper .head-section.hope .bot .amount .label:nth-child(2) {
+  margin-bottom: 20px;
+}
+.wrapper .head-section.hope .bot .intro {
+  text-align: right;
+  width: 220px;
+}
+.wrapper .head-section.hope .bot .intro p {
+  line-height: 1.4;
 }
 .wrapper .text-width-one.sm {
   margin-top: 0;
@@ -214,7 +389,7 @@
   color: #fff;
   opacity: 1;
   font-size: 14px;
-  font-style: oblique;
+  color: rgba(255, 255, 255, 0.5);
 }
 .wrapper .super-text {
   font-family: 'Audiowide';
@@ -227,6 +402,42 @@
   background-repeat: no-repeat;
   -webkit-transition: background-size 0.5s cubic-bezier(0.67, 0.01, 0.15, 0.98);
   transition: background-size 0.5s cubic-bezier(0.67, 0.01, 0.15, 0.98);
+}
+.wrapper .members {
+  display: flex;
+  padding: 30px 0;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+.wrapper .members .member {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+  width: 12.5%;
+}
+.wrapper .members .member::after {
+  content: '';
+  width: 1px;
+  height: 22px;
+  background-color: #555555;
+  position: absolute;
+  right: -1px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.wrapper .members .member:last-child::after {
+  display: none;
+}
+.wrapper .members .member .name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.wrapper .members .member .position {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.5);
 }
 .wrapper .swiper {
   width: 1000px;
@@ -278,6 +489,28 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.wrapper .swipe-box {
+  position: relative;
+}
+.wrapper .swipe-box .button-next,
+.wrapper .swipe-box .button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.wrapper .swipe-box .button-prev {
+  background: url(../images/prev.svg);
+  width: 30px;
+  height: 30px;
+  left: 40px;
+}
+.wrapper .swipe-box .button-next {
+  background: url(../images/next.svg);
+  width: 30px;
+  height: 30px;
+  right: 40px;
 }
 @keyframes dotRotate1 {
   0% {
